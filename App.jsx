@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(60);
   const[startQuiz,setStartQuiz]=useState(false)
   
   useEffect(()=>
@@ -28,7 +28,7 @@ function App() {
     }
     if (currentQuestion< questionData.length-1 ){
       setCurrentQuestion((prevQuestion)=>prevQuestion +1);
-      setTimer(10)
+      setTimer(60)
     }else{
       setShowScore(true)
     }
