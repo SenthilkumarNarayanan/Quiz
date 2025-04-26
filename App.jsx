@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import questionData from "../question.json";
+import questionData from "./question.json";
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [count, setCount] = useState(0);
